@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<img src="/mvc_quiz/resources/img.jpg" width="100" height="100">	
-	<h3>${dto.name }님 환영합니다.</h3>
+popup.jsp
+
 </body>
 </html>

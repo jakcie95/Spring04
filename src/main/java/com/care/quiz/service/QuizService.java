@@ -30,4 +30,17 @@ public class QuizService {
 			}
 		}
 	}
+	public int logchk(QuizDTO dto) {
+		ArrayList<QuizDTO> list = dao.list();
+		for(QuizDTO d : list) {
+			if(d.getId().equals(dto.getId())) {
+				if(d.getPwd().equals(dto.getPwd())) {
+					return 1;
+				}
+				return 0;
+			}
+		}
+		return -1;
+	}
 }
+

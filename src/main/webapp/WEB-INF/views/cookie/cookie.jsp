@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <body>
-<img src="/mvc_quiz/resources/img.jpg" width="100" height="100">	
-	<h3>${dto.name }님 환영합니다.</h3>
+	cookie.jsp<br>
+	cook : ${cook }
 </body>
 </html>

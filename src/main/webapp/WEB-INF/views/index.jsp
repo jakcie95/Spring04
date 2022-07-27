@@ -6,8 +6,17 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script type="text/javascript">
+	var result = ${result}
+	if(result == 0){
+		alert('비밀번호가 틀렸습니다.')
+	}else if(result == -1){
+		alert('존재하지 않는 아이디입니다.')
+	}
+</script>
 <body>index.jsp<br>
-<form action="" method="post">
+<form action="logchk" method="post">
 <input type="text" name="id" placeholder="id"><br>
 <input type="password" name="pwd" placeholder="pwd"><br>
 <input type="submit" value="login"><br>
